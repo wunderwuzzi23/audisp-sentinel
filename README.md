@@ -13,7 +13,9 @@ Note that the recipient is still hardcoded, so please updated accordingly before
 ## Compilation and References 
 
 Install missing dependencies for build
+
 ```$ sudo apt install libaudit-dev```
+
 ```$ sudo apt install libauparse-dev```
 
 
