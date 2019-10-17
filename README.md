@@ -6,7 +6,9 @@ This is a simple audit event dispatcher plugin (prototype) which will send email
 ```$ sudo auditctl  -W /home/bobby/.ssh/production_rsa -p rwxa -k Sentinel```
 
 Then the audisp-sentinel plugin can be configured to send email notifications for any Sentinel tagged event.
-Pretty straight forward, details can be configured in sentinel.conf.
+Pretty straight forward, details can be configured in sentinel.conf. 
+
+Note that the recipient is still hardcoded, so please updated accordingly before compiling.
 
 ## Compilation and References 
 
