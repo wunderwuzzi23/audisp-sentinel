@@ -3,7 +3,7 @@ Audit Dispatcher Sentinel (auditd)
 
 This is a simple audit event dispatcher plugin (prototype) which will send emails for audit events that are tagged with a certain key. For instance consider there is a watcher for an ssh key and we tag corresponding events with -k Sentinel, like:
 
-```$ auditctl  -W /home/bobby/.ssh/production_rsa -p rwxa -k Sentinel```
+```$ sudo auditctl  -W /home/bobby/.ssh/production_rsa -p rwxa -k Sentinel```
 
 Then the audisp-sentinel plugin can be configured to send email notifications for any Sentinel tagged event.
 Pretty straight forward, details can be configured in sentinel.conf.
@@ -17,7 +17,7 @@ $ sudo apt install libauparse-dev
 
 ## Compilation
 
-```gcc -o audisp-sentinel audisp-sentinel.c -lauparse -laudit```
+```$ gcc -o audisp-sentinel audisp-sentinel.c -lauparse -laudit```
 
 ## Configuration
 
